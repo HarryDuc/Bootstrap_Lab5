@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clone ITC</title>
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="header text-center p-5 bg-secondary">
+      <h1>Clone Web ITC</h1>
+    </div>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">ITC</a>
+        <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+          data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+          <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" href="#" aria-current="page">Trang chu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="bi bi-list"></i>Gioi thieu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">San pham</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="bi bi-telephone-fill"></i>Lien he</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="bi bi-envelope-fill"></i>Gop y</a>
+            </li>
+          </ul>
+          <form class="d-flex my-2 my-lg-0">
+            <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="#" aria-current="page" class="btn btn-primary btn-lg" data-bs-toggle="modal"
+                  data-bs-target="#modalId"><i class="bi bi-person-fill"></i>Dang nhap</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" aria-current="page"><i class="bi bi-lock-fill"></i>Dang ki</a>
+              </li>
+            </ul>
+          </form>
+
+          <div class="modal fade" id="modalId" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false"
+            role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-md" role="document">
+              <div class="modal-content">
+                <div class="modal-header bg-primary text-center">
+                  <h5 class="modal-title text-center" id="modalTitleId">
+                    Dang nhap he thong
+                  </h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <div class="mb-3">
+                    <label for="" class="form-label"><i class="bi bi-person-fill"></i>Ten truy cap</label>
+                    <input type="text" name="" id="" class="form-control" placeholder="" aria-describedby="helpId" />
+                  </div>
+                  <div class="mb-3">
+                    <label for="" class="form-label"><i class="bi bi-key"></i>Nhap mat khau</label>
+                    <input type="text" name="" id="" class="form-control" placeholder="" aria-describedby="helpId" />
+                  </div>
+                  <div class="mb-3 d-flex row">
+                    <div class="text-start col-md-6">
+                      <input type="checkbox" name="" id="" placeholder="" aria-describedby="helpId" />Nho mat khau
+                    </div>
+                    <div class="text-end col-md-6">Quen mat khau</div>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-primary">Dang nhap</button>
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                    Close
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <script>
+            const myModal = new bootstrap.Modal(
+              document.getElementById("modalId")
+            );
+          </script>
+
+        </div>
+      </div>
+    </nav>
+
+    <h2 class="text-center text-primary">TIN TUC</h2>
+    <div class="main">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card shadow">
+            <img class="card-img-top" src="image/mang-may-tinh.jpg" alt="Title" />
+            <div class="card-body">
+              <h4 class="card-title">Khởi đầu thành công với Cao đẳng ngành Truyền thông & mạng máy tính - Nhận ngay ưu
+                đãi</h4>
+              <p class="card-text">Bạn đang tìm kiếm Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam
+                dignissimos laudantium doloremque explicabo dicta magnam exercitationem harum dolore, reprehenderit
+                quisquam nihil numquam officia architecto facilis odit nesciunt culpa nisi et.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="col-md-12">
+            <div class="card d-flex flex-row p-2 shadow">
+              <div class="col-md-4">
+                <img class="img-fluid" style="width: 200px;" src="image/nhan-luc.jpg" alt="Title" />
+              </div>
+              <div class="col-md-8 d-flex align-items-center">
+                <div class="card-title">Bật mí một số vị trí việc làm "khát" nhân lực ngành quản trị Digital Marketing
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12 mt-2">
+            <div class="card d-flex flex-row p-2 shadow">
+              <div class="col-md-4">
+                <img class="img-fluid" style="width: 200px;" src="image/thongbao.jpg" alt="Title" />
+              </div>
+              <div class="col-md-8 d-flex align-items-center">
+                <div class="card-title">Thong bao lich thi va danh sach thi tieng anh dau ra nam 2024
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12 mt-2">
+            <div class="card d-flex flex-row p-2 shadow">
+              <div class="col-md-4">
+                <img class="img-fluid" style="width: 200px;" src="image/nhan-bang-đại-hoc-chinh-quyt.jpg" alt="Title" />
+              </div>
+              <div class="col-md-8 d-flex align-items-center">
+                <div class="card-title">Nhan bang dai hoc chinh quy nganh Cong nghe thong tin - Lo trinh hoc tap chi 3.5 nam
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12 mt-3">
+            <div class="card d-flex flex-row p-2 shadow">
+              <div class="col-md-4">
+                <img class="img-fluid" style="width: 200px;" src="image/thongbao.jpg" alt="Title" />
+              </div>
+              <div class="col-md-8 d-flex align-items-center">
+                <div class="card-title">Thong bao ve viec dong bao hiem y te Hoc sinh - sinh vien dot 2 nam hoc 2024 - 2025
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact p-3">
+      <div class="text-center">
+        <h2 class="text-primary">LIEN HE</h2>
+        <H4 class="text-warning">Truong CD CNTT Tp.HCM</H4>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="mb-3">
+            <label for="" class="form-label"><i class="bi bi-person-fill"></i>Họ và tên</label>
+            <input type="text" name="" id="" class="form-control" placeholder="" aria-describedby="helpId" />
+          </div>
+          <div class="mb-3">
+            <label for="" class="form-label"><i class="bi bi-person-rolodex"></i>Địa chỉ</label>
+            <input type="text" name="" id="" class="form-control" placeholder="" aria-describedby="helpId" />
+          </div>
+          <div class="mb-3">
+            <label for="" class="form-label"><i class="bi bi-telephone-fill"></i>Điện thoai</label>
+            <input type="text" name="" id="" class="form-control" placeholder="" aria-describedby="helpId" />
+          </div>
+          <div class="mb-3">
+            <label for="" class="form-label"><i class="bi bi-envelope-fill"></i>Mail</label>
+            <input type="text" name="" id="" class="form-control" placeholder="" aria-describedby="helpId" />
+          </div>
+          <div class="mb-3">
+            <label for="" class="form-label"><i class="bi bi-file-earmark-richtext-fill"></i>Nôi dung</label>
+            <textarea type="text" name="" id="" class="form-control" placeholder=""
+              aria-describedby="helpId"></textarea>
+          </div>
+          <div class="mb-3">
+            <button type="button" class="bg-primary text-light rounded-2">Send</button>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.4728597588437!2d106.63192447401735!3d10.775049589373607!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752ea168a65c0b%3A0x2a4a7dc43e177de1!2zMTIgVHLhu4tuaCDEkMOsbmggVGjhuqNvLCBIb8OgIFRoYW5oLCBUw6JuIFBow7osIEjhu5MgQ2jDrSBNaW5oIDcwMDAwMCwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1727141072803!5m2!1svi!2s"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </div>
+    <div class="footer text-center bg-secondary p-5">
+      <h3>Copy by Vu Minh Duc &copy;</h3>
+    </div>
+  </div>
+</body>
+
+</html>
